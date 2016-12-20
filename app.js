@@ -1,5 +1,9 @@
 var stage = new PIXI.Container();
 var renderer = new PIXI.WebGLRenderer(320,120);
+stage.buttonMode = true;
+stage.interactive = true;
+stage.hitArea = new PIXI.Rectangle(0, 0, 320, 120);
+stage.defaultCursor = "url(cursor.png) 3 2, auto";
 document.body.appendChild(renderer.view);
 var images = [
   "background.png",
