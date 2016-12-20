@@ -1,0 +1,59 @@
+{ "frames": {
+   "boy-walking0.png": {
+    "frame": { "x": 0, "y": 0, "w": 18, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 18, "h": 46 },
+    "sourceSize": { "w": 18, "h": 46 },
+    "duration": 100
+   },
+   "boy-walking1.png": {
+    "frame": { "x": 18, "y": 0, "w": 18, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 18, "h": 46 },
+    "sourceSize": { "w": 18, "h": 46 },
+    "duration": 100
+   },
+   "boy-walking2.png": {
+    "frame": { "x": 36, "y": 0, "w": 18, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 18, "h": 46 },
+    "sourceSize": { "w": 18, "h": 46 },
+    "duration": 100
+   },
+   "boy-walking3.png": {
+    "frame": { "x": 54, "y": 0, "w": 18, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 18, "h": 46 },
+    "sourceSize": { "w": 18, "h": 46 },
+    "duration": 100
+   },
+   "boy-walking4.png": {
+    "frame": { "x": 72, "y": 0, "w": 18, "h": 46 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 18, "h": 46 },
+    "sourceSize": { "w": 18, "h": 46 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.1.11",
+  "image": "boy-walking.png",
+  "format": "RGBA8888",
+  "size": { "w": 90, "h": 46 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Tag", "from": 0, "to": 4, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "LeftLeg", "opacity": 255, "blendMode": "normal" },
+   { "name": "RightLEg", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 2", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}

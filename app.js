@@ -8,7 +8,8 @@ stage.defaultCursor = "url(cursor.png) 3 2, auto";
 document.body.appendChild(renderer.view);
 var images = [
   "background.png",
-  "boy.png"
+  "boy.png",
+  'boy-walking.json'
 ]
 PIXI.loader
   .add(images)
@@ -27,18 +28,29 @@ function setup() {
   //Add the cat to the stage
   stage.addChild(cat);
 
-  cat = PIXI.Sprite.fromImage(
-    "boy.png",
-    null,
-    PIXI.SCALE_MODES.NEAREST
-  );
+  var frames = [
+    PIXI.Texture.fromFrame("boy-walking0.png"),
+    PIXI.Texture.fromFrame("boy-walking1.png"),
+    PIXI.Texture.fromFrame("boy-walking2.png"),
+    PIXI.Texture.fromFrame("boy-walking3.png"),
+    PIXI.Texture.fromFrame("boy-walking4.png")
+  ]
+
+  cat = new PIXI.extras.MovieClip(frames);
   cat.x = 100;
   cat.y = 40;
+  cat.animationSpeed =0.1;
+
+  cat.play();
 
   //Add the cat to the stage
   stage.addChild(cat);
 
 
-  //Render the stage
-  renderer.render(stage);
+  animate();
+  function animate() {
+      // render the stage container
+      renderer.render(stage);
+      requestAnimationFrame(animate);
+  }
 }
