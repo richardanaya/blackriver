@@ -41,7 +41,7 @@ function setup() {
   cat.y = 40;
   cat.animationSpeed =0.1;
 
-  cat.play();
+  //cat.play();
 
   //Add the cat to the stage
   stage.addChild(cat);
