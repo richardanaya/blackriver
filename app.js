@@ -1,5 +1,6 @@
 var stage = new PIXI.Container();
 var renderer = new PIXI.WebGLRenderer(320,120);
+PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
 stage.buttonMode = true;
 stage.interactive = true;
 stage.hitArea = new PIXI.Rectangle(0, 0, 320, 120);
@@ -17,18 +18,20 @@ PIXI.loader
 function setup() {
 
 
-  cat = new PIXI.Sprite(
-    PIXI.loader.resources["background.png"].texture
+  cat = PIXI.Sprite.fromImage(
+    "background.png",
+    null,
+    PIXI.SCALE_MODES.NEAREST
   );
-  cat.texture.baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
 
   //Add the cat to the stage
   stage.addChild(cat);
 
-  var cat = new PIXI.Sprite(
-    PIXI.loader.resources["boy.png"].texture
+  cat = PIXI.Sprite.fromImage(
+    "boy.png",
+    null,
+    PIXI.SCALE_MODES.NEAREST
   );
-  cat.texture.baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
   cat.x = 100;
   cat.y = 40;
 
