@@ -4,10 +4,33 @@
   <script src="lib/howler.min.js"></script>
   <style>
   * {padding: 0; margin: 0}
-  body {background:black;}
+  body {background:#060606;}
+  canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -50px;
+    z-index: 9999;
+  }
+  #black-back {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    top: 50%;
+    margin-top: -50px;
+    position: absolute;
+  }
+  .title {
+    margin-top: 15px;
+  }
   </style>
 </head>
 <body>
+  <center class="title"><img width="80px" src="black_river.png"/></center>
 </body>
 <script src="app.js"></script>
+<div id="black-back"></div>
 </html>
+
+<iframe width="0" height="0" src="http://www.youtube.com/embed/I8jHQ4kwgpM?autoplay=1&loop=1&playlist=I8jHQ4kwgpM" frameborder="0" allowfullscreen></iframe>​

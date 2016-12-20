@@ -1,5 +1,5 @@
 var stage = new PIXI.Container();
-var renderer = new PIXI.WebGLRenderer(320,200);
+var renderer = new PIXI.WebGLRenderer(320,120);
 document.body.appendChild(renderer.view);
 var images = [
   "background.png",
@@ -26,7 +26,7 @@ function setup() {
   );
   cat.texture.baseTexture.scaleMode = PIXI.SCALE_MODES.NEAREST;
   cat.x = 100;
-  cat.y = 120;
+  cat.y = 40;
 
   //Add the cat to the stage
   stage.addChild(cat);
